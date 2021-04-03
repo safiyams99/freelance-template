@@ -1,0 +1,43 @@
+
+const FreelancerData = [
+  {
+    name:"",
+    designation:"",
+    profile:"",
+    location:"",
+    availability:"",
+    age:20,
+    phone:"",
+    expereince:"",
+    description:"",
+    rating:"",
+    verified:true,
+    skills:[],
+    hourlyRate:65,
+    jobsDone:70,
+    rehired:10,
+    languages:[],
+    portfolio:[
+      {
+        web:"",
+        blog:"",
+        portfolio:"",
+        facebook:"",
+        linkdin:"",
+        pintererst:"",
+        instagram:"",
+        twitter:""
+      }
+    ],
+    online:true,
+    reviews:[
+      {
+        clientName:"",
+        tagline:"",
+        time:"",
+        message:""
+      }
+    ]
+  }
+]
+export default FreelancerData
