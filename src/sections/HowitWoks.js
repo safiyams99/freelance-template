@@ -1,6 +1,6 @@
 import React from "react";
 import WorkCard from "/src/components/WorkCard";
-import { Account_Data } from "../data/details";
+import {data} from "../data/details";
 
 function HowitWorks() {
   return (
@@ -16,7 +16,7 @@ function HowitWorks() {
         </div>
         <div className="row">
           
-              {Account_Data.map((data,index) => {
+              {data.map((data,index) => {
                 const { icon, heading, description } = data;
                 return (
                   <WorkCard

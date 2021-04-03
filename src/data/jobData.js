@@ -1,3 +1,7 @@
-const jobsData = []
+const jobsData = [
+  {
+    
+  }
+]
 
 export default jobsData
