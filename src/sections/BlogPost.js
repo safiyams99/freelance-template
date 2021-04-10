@@ -15,7 +15,7 @@ const BlogPost = () => {
             {/* Start Blogs */}
             <div className="col-md-8">
               {BlogPostData.map((data) => {
-                const { date, author, img, detail, header, comments } = data;
+                const { date, author, img, detail, title, commentsCount,category } = data;
                 return (
                   <Post
                     key={date}
@@ -23,8 +23,9 @@ const BlogPost = () => {
                     author={author}
                     img={img}
                     detail={detail}
-                    header={header}
-                    comments={comments}
+                    header={title}
+                    comments={commentsCount}
+                    category={category}
                   />
                 );
               })}

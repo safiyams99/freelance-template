@@ -1,16 +1,8 @@
 import React from 'react';
 
-import BannerCard from "./BannerCard";
 
-import A from "../img/microsoft-home.png"
-import B from "../img/img-home.png"
-import C from "../img/mothercare-home.png"
-import D from "../img/paypal-home.png"
-import E from "../img/serv-home.png"
-import F from "../img/xerox-home.png"
-import G from "../img/yahoo-home.png"
-import H from "../img/mothercare-home.png"
 import bannerbgImg from "../img/banner-9.jpg"
+import BrandSlider from './BrandSlider';
 
 const SearchBar = () => {
     return (
@@ -53,22 +45,7 @@ const SearchBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="company-brand">
-                <div className="container">
-                    <div id="company-brands" className="owl-carousel">
-
-                        <BannerCard pic={A}/>
-                        <BannerCard pic={B}/>
-                        <BannerCard pic={C}/>
-                        <BannerCard pic={D}/>
-                        <BannerCard pic={E}/>
-                        <BannerCard pic={F}/>
-                        <BannerCard pic={G}/>
-                        <BannerCard pic={H}/>
-
-                    </div>
-                </div>
-            </div>
+            <BrandSlider />
         </div>
         <div class="clearfix"></div>
         </>

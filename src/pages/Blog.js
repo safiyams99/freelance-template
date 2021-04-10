@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../sections/Footer";
 import Navbar from "../components/Navbar";
 import BlogPost from "../sections/BlogPost";
 const Blog = ()=> {

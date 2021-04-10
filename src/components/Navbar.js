@@ -3,9 +3,10 @@ import React from "react";
 import A from "../img/logo-white.png"
 
 const Navbar = () => {
+    const path =window.location.pathname
     return (
       <>
-        <nav className="navbar navbar-default navbar-fixed navbar-transparent white bootsnav">
+        <nav className={`navbar navbar-default navbar-fixed ${path=='/'?"navbar-transparent":"navbar-white"} white bootsnav`}>
             <div className="container">
                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i className="fa fa-bars"> </i>

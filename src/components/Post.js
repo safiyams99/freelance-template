@@ -1,6 +1,6 @@
 import React from "react";
 
-function Post({ date, author, img, detail, header, comments }) {
+function Post({ date, author, img, detail, header, comments,category }) {
   return (
     <article className="blog-news">
       <div className="short-blog">
@@ -22,7 +22,7 @@ function Post({ date, author, img, detail, header, comments }) {
             <div className="post-meta">
               Filed Under:{" "}
               <span className="category">
-                <a href="#">Technology</a>
+                <a href="#">{category}</a>
               </span>
             </div>
           </div>

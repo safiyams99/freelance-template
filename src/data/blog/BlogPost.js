@@ -1,11 +1,11 @@
-import img1 from '../img/blog/1.jpg'
-import img2 from '../img/blog/2.jpg'
-import img3 from '../img/blog/3.jpg'
+import img1 from '../../img/blog/1.jpg'
+import img2 from '../../img/blog/2.jpg'
+import img3 from '../../img/blog/3.jpg'
 //profile imAGES
 
 const BlogPostData = [
   {
-    image:img1,
+    img:img1,
     date:"Mar 27, 2021",
     category:"Technology",
     title:"Helping Kids Grow Up Stronger",
@@ -35,12 +35,12 @@ const BlogPostData = [
 
   },
   {
-    image:img2,
+    img:img2,
     date:"Mar 27, 2021",
     category:"Technology",
     title:"Helping Kids Grow Up Stronger",
     author:"Daniel Dex",
-    commentsCount:10,
+    commentsCount:9,
     detail:"Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore",
     commnets:[
       {
@@ -65,7 +65,7 @@ const BlogPostData = [
 
   },
   {
-    image:img3,
+    img:img3,
     date:"Mar 27, 2021",
     category:"Technology",
     title:"Helping Kids Grow Up Stronger",

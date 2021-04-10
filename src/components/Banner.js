@@ -1,10 +1,10 @@
 import React from "react"
  
-const Banner = ({bgImg,title})=> {
+const Banner = ({bgImg,title,cname,gray})=> {
   return(
     <>
     <section
-        className="inner-header-title"
+        className={`${cname?cname:'inner-header-title'} ${gray&&"gray-bg"}`}
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <div className="container">
