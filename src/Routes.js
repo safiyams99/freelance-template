@@ -12,6 +12,7 @@ import JobDetail from "./pages/JobDetail";
 import BrowseJobs from "./pages/BrowseJobs";
 import NewSearchJob from "./pages/NewSearchJob";
 import CandidateProfile from "./pages/CandidateProfile";
+import EmployerProfile from "./pages/EmployerProfile";
 
 const Routes = () => {
   return (
@@ -60,6 +61,11 @@ const Routes = () => {
         exact
         path="/candidateProfile"
         render={(props) => <CandidateProfile {...props} />}
+      />
+      <Route
+        exact
+        path="/employerProfile"
+        render={(props) => <EmployerProfile {...props} />}
       />
     </Switch>
   );
