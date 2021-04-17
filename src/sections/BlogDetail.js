@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "./SideBar";
 import PostDetail from "../components/PostDetail";
-import { blogDetailData } from "../data/blogData";
+import  blogDetailData  from "../data/blog/BlogPost";
 import bannerImg from "../img/banner-10.jpg";
 import Banner from "../components/Banner";
 import Comment from "../sections/Comment";
