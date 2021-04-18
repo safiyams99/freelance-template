@@ -1,5 +1,5 @@
 import React from "react";
-import ShareJob from "../components/ShareJob";
+
 import img1 from "../img/com-2.jpg";
 const JobDetailSideBar = () => {
   return (
@@ -41,8 +41,6 @@ const JobDetailSideBar = () => {
           Apply For This
         </a>
       </div>
-
-      <ShareJob />
     </>
   );
 };

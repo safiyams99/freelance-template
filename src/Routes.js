@@ -8,7 +8,11 @@ import CreateJob from "./pages/CreateJob";
 import Payment from "./pages/Payment";
 import Pricing from "./pages/Pricing";
 import ClientProfile from "./pages/ClientProfile";
-
+import JobDetail from "./pages/JobDetail";
+import BrowseJobs from "./pages/BrowseJobs";
+import NewSearchJob from "./pages/NewSearchJob";
+import CandidateProfile from "./pages/CandidateProfile";
+import EmployerProfile from "./pages/EmployerProfile";
 
 const Routes = () => {
   return (
@@ -37,6 +41,31 @@ const Routes = () => {
         exact
         path="/clientProfile"
         render={(props) => <ClientProfile {...props} />}
+      />
+      <Route
+        exact
+        path="/jobdetail"
+        render={(props) => <JobDetail {...props} />}
+      />
+      <Route
+        exact
+        path="/browsejob"
+        render={(props) => <BrowseJobs {...props} />}
+      />
+      <Route
+        exact
+        path="/newSearchJob"
+        render={(props) => <NewSearchJob {...props} />}
+      />
+      <Route
+        exact
+        path="/candidateProfile"
+        render={(props) => <CandidateProfile {...props} />}
+      />
+      <Route
+        exact
+        path="/employerProfile"
+        render={(props) => <EmployerProfile {...props} />}
       />
     </Switch>
   );

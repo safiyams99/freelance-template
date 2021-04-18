@@ -1,5 +1,5 @@
 import React from "react";
-import ShareJob from "../components/ShareJob";
+
 import TitleHeader from "../components/TitleHeader";
 import JobDetailSideBar from "./JobDetailSideBar";
 import DetailBox from "../components/DetailBox";
