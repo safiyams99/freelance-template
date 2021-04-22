@@ -13,11 +13,13 @@ import BrowseJobs from "./pages/BrowseJobs";
 import NewSearchJob from "./pages/NewSearchJob";
 import CandidateProfile from "./pages/CandidateProfile";
 import EmployerProfile from "./pages/EmployerProfile";
-import ResumeDetail from './pages/ResumeDetail';
-import CompanyDetail from './pages/CompanyDetail';
-import ManageResume from './pages/ManageResume';
-import ResumeData from './data/employee/Resume';
-import CompanyData from './data/company/Data';
+import ResumeDetail from "./pages/ResumeDetail";
+import CompanyDetail from "./pages/CompanyDetail";
+import ManageResume from "./pages/ManageResume";
+import ResumeData from "./data/employee/Resume";
+import CompanyData from "./data/company/Data";
+import ManageEmployee from "./pages/ManageEmployee";
+
 const Routes = () => {
   return (
     <Switch>
@@ -71,23 +73,40 @@ const Routes = () => {
         path="/employerProfile"
         render={(props) => <EmployerProfile {...props} />}
       />
+      <Route
+        exact
+        path="/ManageEmployee"
+        render={(props) => <ManageEmployee {...props} />}
+      />
 
-{ResumeData.map(data=>{
-                const {id} = data;
-                return(
-                    <Route key={id} exact path={`/resumeDetail/${id}`} render={(props) => <ResumeDetail {...props} data={data}/> } />
+      {ResumeData.map((data) => {
+        const { id } = data;
+        return (
+          <Route
+            key={id}
+            exact
+            path={`/resumeDetail/${id}`}
+            render={(props) => <ResumeDetail {...props} data={data} />}
+          />
+        );
+      })}
+      {CompanyData.map((data) => {
+        const { id } = data;
+        return (
+          <Route
+            key={id}
+            exact
+            path={`/companyDetail/${id}`}
+            render={(props) => <CompanyDetail {...props} data={data} />}
+          />
+        );
+      })}
 
-                )
-            })}
-      {CompanyData.map(data=>{
-                const {id} = data;
-                return(
-                    <Route key={id} exact path={`/companyDetail/${id}`} render={(props) => <CompanyDetail {...props} data={data}/> } />
-
-                )
-            })}
-    
-      <Route exact path="/manageResume" render={props => <ManageResume {...props} />}/>
+      <Route
+        exact
+        path="/manageResume"
+        render={(props) => <ManageResume {...props} />}
+      />
     </Switch>
   );
 };
