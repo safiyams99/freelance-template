@@ -1,5 +1,11 @@
 import ResumeData from "./Resume";
 import Messages from "./Messages";
+
+import A from "../../img/client-1.jpg";
+import B from "../../img/client-2.jpg";
+import C from "../../img/client-4.jpg";
+import D from "../../img/client-5.jpg";
+
 const Data = [
   {
     name: "Adam Declizer",
@@ -86,7 +92,88 @@ const Data = [
     // ]
   }
 ];
-export default Data;
+const EData = [
+  {
+    id: 1,
+    profile_image: A,
+    name: "Anna Hoysted",
+    tagline: "Web Designer",
+    links: ["fa fa-facebook", "fa fa-twitter", "fa fa-linkedin"]
+  },
+  {
+    id: 2,
+    profile_image: B,
+    name: "Jesse Leslie",
+    tagline: "App Designer",
+    links: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-linkedin",
+      "fa fa-instagram"
+    ]
+  },
+  {
+    id: 3,
+    profile_image: C,
+    name: "Zane Joyner",
+    tagline: "IOS Developer",
+    links: ["fa fa-facebook", "fa fa-linkedin"]
+  },
+  {
+    id: 4,
+    profile_image: D,
+    name: "Finn Osman",
+    tagline: "UI/UX Designer",
+    links: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-linkedin",
+      "fa fa-instagram"
+    ]
+  },
+  {
+    id: 5,
+    profile_image: B,
+    name: "Taylah Axon",
+    tagline: "PHP Developer",
+    links: ["fa fa-facebook", "fa fa-linkedin"]
+  },
+  {
+    id: 6,
+    profile_image: C,
+    name: "Zane Joyner",
+    tagline: "IOS Developer",
+    links: ["fa fa-facebook", "fa fa-linkedin"]
+  },
+  {
+    id: 7,
+    profile_image: D,
+    name: "Finn Osman",
+    tagline: "UI/UX Designer",
+    links: ["fa fa-facebook", "fa fa-linkedin"]
+  },
+  {
+    id: 8,
+    profile_image: B,
+    name: "Taylah Axon",
+    tagline: "PHP Developer",
+    links: ["fa fa-facebook", "fa fa-linkedin"]
+  },
+  {
+    id: 9,
+    profile_image: A,
+    name: "Anna Hoysted",
+    tagline: "Web Designer",
+    links: [
+      "fa fa-facebook",
+      "fa fa-twitter",
+      "fa fa-linkedin",
+      "fa fa-instagram"
+    ]
+  }
+];
+
+export { Data, EData };
 //  const Data = [
 //    {
 //      id:0,

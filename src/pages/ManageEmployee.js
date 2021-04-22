@@ -1,18 +1,15 @@
 import React from "react";
-import HomeHeader from "../sections/Header"
 import Footer from "../sections/Footer";
-import Home from "./Home";
-import BannerHeader from "../sections/ManageEmployeePage/BannerHeader";
-import EmployeeList from "../sections/ManageEmployeePage/EmployeeList";
-
+import BannerHeader from "../sections/ManageEmployee/BannerHeader";
+import EmployeeList from "../sections/ManageEmployee/EmployeeList";
 
 const ManageEmployee = () => {
-    return (
-        <div>
-            <BannerHeader/>
-            <EmployeeList/>
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <BannerHeader />
+      <EmployeeList />
+      <Footer />
+    </div>
+  );
 };
 export default ManageEmployee;
